@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnTemplate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Parametrage saisie"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinuerSaisie"
+        app:layout_constraintEnd_toStartOf="@+id/btnNouvelleSaisie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <Button
+        android:id="@+id/btnSupprimerSaisie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Supprimer Saisie"
+        app:layout_constraintBottom_toTopOf="@+id/btnParametres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnContinuerSaisie"
+        app:layout_constraintTop_toBottomOf="@+id/btnNouvelleSaisie" />
+
+    <Button
+        android:id="@+id/btnParametresBalances"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Parametres Balances"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnParametres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinuerSaisie" />
+
+    <Button
+        android:id="@+id/btnContinuerSaisie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Continuer Saisie"
+        app:layout_constraintBottom_toTopOf="@+id/btnParametresBalances"
+        app:layout_constraintEnd_toStartOf="@+id/btnSupprimerSaisie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTemplate" />
+
+    <Button
+        android:id="@+id/btnNouvelleSaisie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Nouvelle Saisie"
+        app:layout_constraintBottom_toTopOf="@+id/btnSupprimerSaisie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTemplate"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <ImageButton
+        android:id="@+id/btnParametres"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnParametresBalances"
+        app:layout_constraintTop_toBottomOf="@+id/btnSupprimerSaisie"
+        app:srcCompat="@drawable/tapakah_80" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfosBalance">
+
+    <TextView
+        android:id="@+id/tvbNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Nom :"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etbNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvbNom"
+        app:layout_constraintStart_toEndOf="@+id/tvbNom"
+        app:layout_constraintTop_toTopOf="@+id/tvbNom" />
+
+    <TextView
+        android:id="@+id/tvbVitesse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Vitesse :"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbNom" />
+
+    <TextView
+        android:id="@+id/tvbParite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Parité :"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbVitesse" />
+
+    <TextView
+        android:id="@+id/tvbNDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Nombre de bits :"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbParite" />
+
+    <TextView
+        android:id="@+id/tvbBDS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Bits de stop :"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbNDB" />
+
+    <TextView
+        android:id="@+id/tvbPEK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Pesée en kg :"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbBDS" />
+
+    <TextView
+        android:id="@+id/tvbRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Caractère g"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbPEK" />
+
+    <TextView
+        android:id="@+id/tvbPortee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Portée(maxi)"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbRA" />
+
+    <EditText
+        android:id="@+id/etbVitesse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvbVitesse"
+        app:layout_constraintStart_toEndOf="@+id/tvbVitesse"
+        app:layout_constraintTop_toTopOf="@+id/tvbVitesse" />
+
+    <Spinner
+        android:id="@+id/spnParite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvbParite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvbParite"
+        app:layout_constraintTop_toTopOf="@+id/tvbParite" />
+
+    <EditText
+        android:id="@+id/etbNDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvbNDB"
+        app:layout_constraintStart_toEndOf="@+id/tvbNDB"
+        app:layout_constraintTop_toTopOf="@+id/tvbNDB" />
+
+    <EditText
+        android:id="@+id/etbBDS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvbBDS"
+        app:layout_constraintStart_toEndOf="@+id/tvbBDS"
+        app:layout_constraintTop_toTopOf="@+id/tvbBDS" />
+
+    <CheckBox
+        android:id="@+id/cbbPEK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvbPEK"
+        app:layout_constraintStart_toEndOf="@+id/tvbPEK"
+        app:layout_constraintTop_toTopOf="@+id/tvbPEK" />
+
+    <CheckBox
+        android:id="@+id/cbbasG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvbRA"
+        app:layout_constraintStart_toEndOf="@+id/tvbRA"
+        app:layout_constraintTop_toTopOf="@+id/tvbRA" />
+
+    <EditText
+        android:id="@+id/etbPortee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvbPortee"
+        app:layout_constraintStart_toEndOf="@+id/tvbPortee"
+        app:layout_constraintTop_toTopOf="@+id/tvbPortee" />
+
+    <Button
+        android:id="@+id/btnbValider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etbPortee" />
+
+    <Button
+        android:id="@+id/btnbAnnuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Annuler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbPortee" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

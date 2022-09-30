@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ApplicationSaisieDonnees">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test">
+        <activity android:name="com.example.ApplicationSaisieDonnees.APropos"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.ModeleAPartirDeModele" />
+        <activity
+            android:name="com.example.ApplicationSaisieDonnees.InfosBalance"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.ChoixFichierEnvoye" />
+        <activity
+            android:name="com.example.ApplicationSaisieDonnees.DefNomUtilisateur"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.Parametres" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.ParametresBalances" />
+        <activity
+            android:name="com.example.ApplicationSaisieDonnees.IncremCrit"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="com.example.ApplicationSaisieDonnees.ValiderSuppression"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.Saisie" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.NomFichier" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.NouvelleSaisie" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.SupprimerSaisie" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.ContinuerSaisie" />
+        <activity
+            android:name="com.example.ApplicationSaisieDonnees.NouveauCritere"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.Template" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.NomTemplate" />
+        <activity android:name="com.example.ApplicationSaisieDonnees.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
